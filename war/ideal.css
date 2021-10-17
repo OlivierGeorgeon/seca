@@ -1,0 +1,142 @@
+BODY	{
+	font: 100% Verdana, Helvetica, Arial, sans-serif;
+	background-color:#FFFFFF;
+	margin: 0;
+	text-align: center;
+    }
+
+div.page                {
+	width:70%;
+	float:left;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+					
+h1, h2, h3, h5, h6 {
+    clear: left;
+    margin: 0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #8CACBB;
+    display: block;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 140%;
+	text-decoration: none;
+}
+
+h2 {
+    font-size: 100%;
+	text-decoration: none;
+}
+
+img {
+    border: none;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+    color: #436976;
+    background-color: transparent;
+}
+
+p, ul {
+    margin: 0.5em 0em 1em 0em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+p  a:visited , ul a:visited,div.pathBar a:visited {
+	color: Purple;
+    background-color: transparent;
+}
+
+p a:active, ul a:active,div.pathBar a:active {
+	color: Red;
+    background-color: transparent;
+}
+
+p img {
+    border: 1;
+    margin: 0;
+}
+
+
+hr {
+    clear: both;
+    height: 1px;
+    color: #8CACBB;
+    background-color: transparent;
+}
+ul { 
+    font: Verdana, Helvetica, Arial, sans-serif;
+    list-style-type: square;
+    margin: 0.5em 0 0 2em;
+    padding:0;
+}
+
+ol {
+    line-height: 1.5em;
+    margin: 0.5em 0 0 2em;
+    padding:0;
+}
+
+ul a, ol a {
+    text-decoration: underline;
+}
+
+li {
+    margin-bottom: 0em;
+}
+div.figure		{
+				padding:5;
+				margin:5;
+				border:0px;
+				font: 80% Verdana, Helvetica, Arial, sans-serif;
+				font-style:italic;
+				text-align:center;
+				line-height: 1.5em;
+				}
+div.logo		{
+				padding:5;
+				margin:5;
+				border:0px;
+				font: 80% Verdana, Helvetica, Arial, sans-serif;
+				text-align:center;
+				line-height: 1.5em;
+				float:right;
+				}
+div.contact		{
+				padding:5;
+				margin:5;
+				border:0px;
+				font: 80% Verdana, Helvetica, Arial, sans-serif;
+				text-align:center;
+				line-height: 1.5em;
+				float:left;
+				}
+img.contact     {
+				height:80;
+				}
+div.pathBar {
+    /* The path bar, including breadcrumbs and add to favorites */
+    font: 80% Verdana, Helvetica, Arial, sans-serif;
+    border-bottom-color: #8CACBB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-left: 0em;
+    padding-right: 0em;
+	margin-bottom:2em;
+}
+
+.breadcrumbs {
+    float: left;
+    text-transform: lowercase;
+}

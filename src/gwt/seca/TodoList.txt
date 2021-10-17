@@ -1,0 +1,48 @@
+Priority 1:
++ Renderer: COMMITED
++ Abstract agent model and agent anim: COMMITED
++ Fix Continuous mode: COMMITED
++ Add cursor block to add food or other objects (different keys): COMMITED
++ HudManager: COMMITED (with a memory leak)
++ Update to Ernest10: COMMITED
++ Animations for Ernest10: COMMITED
++ Add Materials: COMMITED
++ Improve the shark model: COMMITED
++ Change the somatoMap geometry: COMMITED
++ Add sounds: COMMITED
++ Fix traces: COMMITED
++ Add Play/Pause/Stop buttons to control agents: COMMITED
++ Add cameras attached to agents: COMMITED
++ Add control to switch between cameras: COMMITED
++ Fix the overload of the processor: COMMITED
++ Add widgets to see the retina and the somatoMap: COMMITED
++ Add a step button: COMMITED
++ Add mouse picking: COMMITED
++ Solve commit errors: COMMITED
++ Add a bounding box to blocks: COMMITED
++ Add methods to queue and render primitives: COMMITED
++ Fix the bug introduced with 'inScene()': COMMITED
++ Add a log printer service: COMMITED
++ Display computing and rendering times: COMMITED
++ Color the mouse-selected face: COMMITED
++ Fix the displaying bug of the mouse-selected face: COMMITED
++ Fill the style sheet: COMMITED
++ Write a use case: COMMITED
++ Add an object called 'CircularGrid' and its iterator: DONE
++ Add an object called 'ArcGrid' and its iterator: DONE
+- Fix the vision
+- Add an agent manager that registers agent classes
+- Add a class Cell to contain cell details
+- Add loadMap method: only the server side can read/write a file
+- Add collisions between entities
+- Test App Engine
+
+- Add textures. Added: Stone, Sand
+- Add sounds.
+- Add other meshes. Added: Hemisphere, Plane, Fish, Plant
+- Improve the tracer with client-side requests
+
+Further Work:
+- An animation manager/maker
+- Frustum culling
+- Octree manager for blocks

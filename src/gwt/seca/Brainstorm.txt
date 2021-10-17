@@ -1,0 +1,66 @@
+*Bases du moteur 3D :
+	- Structures de partitionnement : Octree
+	- Scenegraph
+	- Gestion du rendu
+
+*Rapport :
+	- Parler des optimisations possibles, des utilisateurs visés (mapping keycode/action inutile ici)
+
+*Other environments:
+	- Gridland: non-interactif
+	- Vacuum: Vacuum Cleaner Environment
+		http://code.google.com/p/engage-cs/wiki/VacuumCleaner
+		http://home.comcast.net/~marklisa91/markacohen/publications/Cohen09ISECON.pdf
+	- dTank: Simulation game
+		http://acs.ist.psu.edu/dTank/
+	- oRis: 
+		http://www.enib.fr/~harrouet/oris.html
+	- Robocode: A programming game, where the goal is to develop a robot battle tank
+		http://robocode.sourceforge.net/
+
+*Critères :
+	- Interactif
+	- Immersif
+	- En ligne
+	- Multi-agent
+	- Ergonomie
+	- Evolutivité
+	- Interactionaliste
+	- Etude du comportement
+	
+*Feedback présentation du 16/06/2011 :
+	Olivier Voisin // Projet IDEAL
+	
+	Olivier est chargé de faire une version 3D interactive de l'environnement de simulation de ERNEST 
+	agent artificiel devant exhiber un comportement d'apprentissage dévelepemmental.
+	
+	L'objectif est de permettre aux utlisateurs d'Ernest (qui est disponible sur le web) d'interagir avec l'environnement 
+	-> modifier l'environnement d'ERNEST http://e-ernest.blogspot.com/
+	
+	Le travail consiste donc à étudier les différents environnements existants, de mettre en évidence les propriétés recherchées 
+	pour l'usage dans le cadre d'une recherche fondée sur la validation par simulateurs des architectures et algorithmes associés 
+	à l'apprentissage dévelopemental.
+	
+	La contribtion : SECA (Simulation Environment for Constructivist Agents) est interactif, immersif, en ligne, et multi-agent. 
+	Le codage est de type web et le code peut évoluer en ligne (contenu de la page) -> évolutif, interactionaliste -> matrices visuelles 
+	et tactiles comme stimuli, Analyse on line des comportements (trace based...).
+	
+	Le code exploite la carte graphique directement -> performances, mais... moins de généricité naturellement
+	
+	Zoom sur la réalisation
+	
+	- maths -> celles des étagères de la recherche et du web
+	- architecture avec des "moteurs" (simulation, rendu)
+	
+	Questions : quelle est la problématique de recherche (Nathalie).
+	Réponse : c'est une question de recherche en ingénierie des simulations comportementales (pour l'apprentissage dévelopemental). 
+			(vision d'Alain...) -> aller jusqu'au bout de la logique de recherche -> aller vers une forge ?
+	
+*Pour le côté recherche:
+	- Expliciter les hypothèses simplificatrices et les justifier :
+		- Le raytracer renvoit la couleur des objets (sans ombre ou changement de luminosité) 
+			-> Evite de devoir implementer un algorithme de décodage/rectification de couleur dans Ernest
+			-> Evite de devoir modifier la couleur dans le raytracer
+		- Discretisation de l'environnement
+	- Soulever les questions de recherche découverte lors du développement d'un environnement
+		- ex: Navigation mesh qui peut mener à l'écriture d'un nouvel algorithme

@@ -1,0 +1,92 @@
+/** Add css rules here for your application. */
+
+html {overflow-y: scroll;}
+
+body { 
+	margin: 0px;
+	padding: 0px; 
+	text-align: center; /* Center the page for IE */
+}
+
+#seca-MainContent {
+	margin: 10px auto; /* Center the page for other browsers */
+	text-align: left;
+	width: 1000px;
+}
+
+#seca-Player {
+	margin: auto auto 5px;
+}
+
+.seca-DashboardMainContainer {
+	text-align: center;
+	width: 1000px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+}
+.seca-DashboardMainContainerTitle {
+	text-align: center;
+	font-weight: bold;
+	font-size: medium;
+	color: white;
+	background-color: #666666;
+	padding: 1px;
+}
+.seca-DashboardMainContainerContent {
+	text-align: left;
+}
+.seca-DashboardContainer {
+	text-align: center;
+}
+.seca-DashboardContainerTitle {
+	text-align: center;
+	min-width: 110px;
+	background-color: #CCCCCC;
+	padding: 1px;
+}
+.seca-DashboardContainerContent {
+	text-align: center;
+}
+
+.seca-DashboardContainer .seca-DashboardLabel {
+	text-align: center;
+}
+.seca-DashboardLabel {
+	text-align: left;
+}
+.g2d-Surface {
+	text-align: center;
+}
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}

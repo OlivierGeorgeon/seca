@@ -1,0 +1,41 @@
+Observer:
+	*Run a simulation
+		- Start a simulation
+		- Pause the simulation
+		- Step the simulation
+		- Restart the simulation
+	*Modify the scene
+		- Add blocks to the scene
+		- Remove blocks from the scene
+		- Load a scene
+		- Save the scene
+	*See agent details (stimuli, ...) -> Dashboard
+	*Configure agents (light configuration) -> Dashboard
+	(*Play a trace)
+
+Agent Modeler:
+	* Add new agents:
+		- Create new agent models
+			- Associate available interactions
+			- Create a 3D animatable model
+			- Add dashboard widgets (I/O)
+			- Use available interactions
+			- Use available sounds
+			- Add new sounds
+		- Create new agent animations
+			- Create key positions
+			- Specify the cycles
+	* Modify scene objects:
+		- Modify available blocks
+			- Change the texture
+			- Change the mesh
+			- Change the material
+		- Create new blocks
+			- Add new textures
+			- Add new meshes
+			- Create new materials
+	* Create new interactions (actions+stimuli)
+		- Implement new interactions
+		- Use available representations
+		- Create new representations
+	

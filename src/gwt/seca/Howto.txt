@@ -1,0 +1,81 @@
+1/ How to install GWT (Google Web Toolkit) from scratch. (2011/05/27)
+
+	*No requirement
+
+	*If you do not have eclipse installed:
+		- Download Eclipse IDE for Java Developers from
+			'http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/heliossr2'.
+		- Extract the files from the archive, no installation is needed.
+			
+	*To install the plugin, we will use the Eclipse Update Manager.
+		- Launch Eclipse.
+		- While Eclipse is starting, go to the URL 'http://code.google.com/intl/fr-FR/eclipse/docs/download.html'.
+		- Copy the update site URL for the version of eclipse you have.
+			The current version is Eclipse is 3.6 (Helios) and the corresponding update site URL is 
+			'http://dl.google.com/eclipse/plugin/3.6'
+		- In Eclipse, select 'Help' -> 'Install New Software...'.
+		- Paste the update site URL.
+		- Check the boxes for 'Plugin' and 'SDKs' before clicking 'Next'.
+		- Follow the instructions and select 'Ok' if a security warning appears to finish installing.
+
+
+2/ How to install a SVN plugin in Eclipse. (2011/05/27)
+
+	*Requirements:
+		- Eclipse
+	
+	*SVN in Eclipse is spread into 2 camps:
+		- The SVN people have developed a plugin called Subclipse.
+		- The Eclipse people have a plugin called Subversive.
+	Both are very similar but I will use Subversive in the next HowTos.
+	
+	*Open the Eclipse Update Manager:
+		- Select 'Help' -> 'Install New Software...'.
+	
+	*To install Subclipse (http://subclipse.tigris.org/servlets/ProjectProcess?pageID=p4wYuA): 
+		- Use the update site URL 'http://subclipse.tigris.org/update_1.6.x'.
+		- Check the box for 'Subclipse'.
+	
+	*To install Subversive (http://www.eclipse.org/subversive/downloads.php):
+		- Select the update site 'Helios'.
+		- In Collaboration, check the box for 'Subversive SVN Team Provider'.
+		
+	*Follow the instructions to finish the installation and pass the security warning if any.
+	
+	*For Subversive, you have to install additional connectors:
+		- Select 'File' -> 'Import...' -> 'SVN' -> 'Project from SVN'.
+		- The first time, a window will open to install connectors.
+		- Select 'SVN Kit 1.3.5'.
+		- Select 'Finish' and follow the instructions to complete the installation.
+
+
+3/ How to download the GWT project SECA, using the Subversive plugin. (2011/05/27)
+
+	*Requirements:
+		- Eclipse with the GWT plugin and the Subversive plugin installed.
+	
+	*Importing the project:
+		- Select 'File' -> 'Import...' -> 'SVN' -> 'Project from SVN'.
+		- Enter the URL 'https://see3d.googlecode.com/svn/trunk/seca'.
+		- Select 'Finish'.
+		- Select 'Finish' again.
+	
+	*Rev <= 36: The project being under development, untagged revisions need another project called 'gwt-ernest'.
+	This other project is a version of the google hosted project e-ernest adapted to work with GWT.
+		- Select 'File' -> 'Import...' -> 'SVN' -> 'Project from SVN'.
+		- Select 'Create a new repository location' and 'Next'.
+		- Enter the URL 'https://voisinol.googlecode.com/svn/gwt-ernest'.
+		- Select 'Next'.
+		- Select 'Browse' -> 'trunk' -> 'Ok'.
+		- Select 'Finish'.
+		- Select 'Finish' again.
+	
+	*Rev > 36: The project using another project under development, untagged revisions need a project called 'e-ernest'.
+	This other project provides the last version of the agent Ernest, which is now GWT compatible.
+		- Select 'File' -> 'Import...' -> 'SVN' -> 'Project from SVN'.
+		- Select 'Create a new repository location' and 'Next'.
+		- Enter the URL 'https://e-ernest.googlecode.com/svn'.
+		- Select 'Next'.
+		- Select 'Browse' -> 'trunk' -> 'e-ernest' -> 'Ok'.
+		- Select 'Finish'.
+		- Select 'Finish' again.

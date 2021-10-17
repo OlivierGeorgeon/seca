@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>xmlStreamTracerServiceImpl</servlet-name>
+    <servlet-class>gwt.seca.server.XMLStreamTracerServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>xmlStreamTracerServiceImpl</servlet-name>
+    <url-pattern>/seca/xmlstreamtracer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logPrinterServiceImpl</servlet-name>
+    <servlet-class>gwt.seca.server.LogPrinterServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logPrinterServiceImpl</servlet-name>
+    <url-pattern>/seca/logprinter</url-pattern>
+  </servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

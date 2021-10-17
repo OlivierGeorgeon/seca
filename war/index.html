@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="Seca.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Ernest 10.5 - 3D</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="seca/seca.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    <div id="seca-MainContent">
+    	<div id="seca-Player" oncontextmenu="return false;"></div>
+		<div id="seca-Dashboard"></div>
+    	<h2>Purpose</h2>
+		<p>This simulation demonstrates how Ernest agents (<a href="http://e-ernest.blogspot.com/2011/11/ernest-105.html">Version 10.5</a>) interact with their environment and interact with each other.</p> 
+		<p>Remember that Ernests know nothing about their world when they get born.
+		They organize their behavior through experience while accomplishing intrinsic drives. 
+		They initially tend to explore contrasted colors in the environment.
+		Eventually, they discover that they can eat blue tiles and cuddle with other Ernests. 
+		Once this is discovered, they tend to preferably seek blue tiles and other Ernests rather than interacting with other kinds of objects.
+		Note that each Ernest may develop its own character as it grows up, even though they all have the same "genetic baggage" (the same algorithm).
+		You can recognize them individually by their missing fins.
+		Also, they tend to become quieter as they get older.</p>
+		<p>In some instances, it may take a while before they learn to cuddle together. 
+		You can increase their odds to meet by luring them into the same area, or introducing additional Ernests.
+		You can experience what it is like to terminate an Ernest, which, we believe, is still ethically OK :-).</p> 
+
+    	<h2>Controls</h2>
+    	<ul>
+    	<li>The 3D simulation should appear on the top of this page (better with Chrome). If not, please follow a WebGL troubleshooting procedure  
+		such as <a href="http://get.webgl.org/troubleshooting/">this one</a>.</li>
+		<li>Buttons: Play, Pause, Reset: control the simulation.</li>
+		<li>Arrows: move the cursor (blue edge cube) horizontally.</li>
+		<li>Action Keys: insert Wall (W) at the cursor location, or Food (F), another Ernest (E), Yellow tiles (Y), Green tiles (G), or empty this location (SPACE).</li>
+		<li>CTRL + arrows: translate the camera.</li>
+		<li>ALT + arrows: rotate the camera.</li>
+		<li>ALT + Page-Up/Page-Down: zoom in/out (ALT + fn + arrows on a Mac).</li>
+		<li>TAB: toggle first-person camera.</li>
+		<li>The tabs <i>Ernest n</i> show how Ernest n see their world: 12 pixel vision, 3x3 tactile matrix, other stimuli: eat, cuddle, bump.
+    	The <i>spatial memory</i> represents Ernest's representation of its local surrounding environment.
+		The control buttons let you pause, run a step at a time, or terminate this Ernest.</li>
+		</ul>
+		<h2>References</h2>
+    	<p>Please visit <a href="http://e-ernest.blogspot.com/">Ernest's blog</a> for more information.</p>
+	</div>
+  </body>
+</html>
